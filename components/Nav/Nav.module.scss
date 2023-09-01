@@ -1,0 +1,72 @@
+@import "../../styles/styleguide.scss";
+
+.nav__container {
+  display: none;
+  z-index: 2;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav__container {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    padding-top: space-for-units(2.5);
+    display: block;
+  }
+}
+
+.nav__wrapper {
+  max-width: 1148px;
+  margin: 0 auto;
+}
+
+.nav__content {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav__content > div {
+  &:nth-child(1) {
+    width: 191px;
+  }
+
+  &:nth-child(2) {
+    width: 826px;
+  }
+
+  &:nth-child(3) {
+    width: 131px;
+  }
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: space-for-units(4);
+  gap: space-for-units(5.5);
+}
+
+.nav__a {
+  font-family: $font-arial;
+  color: $white;
+  text-decoration: none;
+}
+
+.nav__language {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__language > div {
+  &:first-of-type {
+    margin-right: space-for-units(2.5);
+  }
+}

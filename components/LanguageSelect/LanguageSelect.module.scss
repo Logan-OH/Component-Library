@@ -1,0 +1,40 @@
+@import "../../styles/styleguide.scss";
+
+.lang {
+  position: relative;
+}
+
+.lang__current {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  padding: space-for-units(1);
+  border-radius: 5px;
+  text-align: left;
+  background-color: $white;
+  border: 1px solid $grey-light;
+  cursor: pointer;
+}
+
+.lang__a {
+  z-index: 4;
+  font-family: $font-arimo;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $grey;
+}
+
+.lang__dropdown {
+  position: absolute;
+  top: space-for-units(5);
+  display: flex;
+  flex-direction: column;
+  gap: space-for-units(1);
+  border-radius: 5px;
+  padding: space-for-units(1);
+  width: 110px;
+  background-color: $white;
+}

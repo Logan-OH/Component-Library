@@ -1,0 +1,57 @@
+@import "../../styles/styleguide.scss";
+
+@media (min-width: 1200px) {
+  .navm {
+    display: none !important;
+  }
+}
+
+.navm__wrapper {
+  padding: space-for-units(2.5) space-for-units(2.5);
+}
+
+.navm__content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navm__links {
+  display: none;
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  padding: 0 space-for-units(2.5);
+  background-color: $blue;
+  z-index: 3;
+}
+
+@media (min-width: 1200px) {
+  .navm__links {
+    display: none !important;
+  }
+}
+
+.navm__linkwrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.navm__a {
+  font-family: $font-vertigo;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 60px;
+  list-style-type: none;
+  text-decoration: none;
+  color: $white;
+  text-decoration: none;
+}
+.navm__linkwrapper .navm__a:nth-child(5), .navm__linkwrapper .navm__a:nth-child(6), .navm__linkwrapper .navm__a:nth-child(7)  {
+  font-weight: normal;
+}
+
+.navm__social {
+  margin-top: space-for-units(2);
+}

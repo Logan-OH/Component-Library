@@ -1,0 +1,14 @@
+@import "../../styles/styleguide.scss";
+
+.next {
+  padding-top: space-for-units(7.5);
+  padding-bottom: space-for-units(7.5);
+  background-color: $blue;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

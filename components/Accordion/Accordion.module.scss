@@ -1,0 +1,40 @@
+@import "/styles/styleguide.scss";
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion--open {
+  background-color: $grey-light-light;
+}
+
+.fa-caret-right {
+  font-size: 10px;
+}
+
+.accordion__h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  margin: 0;
+  padding: space-for-units(2);
+  font-size: 24px;
+  font-weight: bold;
+  pointer-events: none;
+
+  span {
+    margin-right: space-for-units(1.5);
+  }
+}
+
+.acc__icons {
+  // margin-left: 780px;
+}
+
+.accordion__itemBody {
+  background-color: $grey-light-light;
+}

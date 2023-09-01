@@ -1,0 +1,107 @@
+@import "../../styles/styleguide.scss";
+.term {
+  position: relative;
+  display: inline;
+  border-bottom: 3px dashed $blue-light;
+  cursor: pointer;
+}
+
+.term__img {
+  display: inline;
+  position: relative;
+  cursor: pointer;
+}
+
+.tt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey-dark-30-perent;
+  backdrop-filter: blur(5px);
+}
+
+@media (min-width: 762px) {
+  .tt {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+}
+
+.tt__container {
+  width: calc(100% - space-for-units(10));
+  max-width: 335px;
+  max-height: 90%;
+  border-radius: 30px;
+  padding: space-for-units(6.75) space-for-units(2.5) space-for-units(4);
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: $grey-lighter;
+  box-shadow: 2px 2px 20px $black;
+  cursor: pointer;
+}
+
+@media (min-width: 762px) {
+  .tt__container {
+    width: 550px;
+    max-width: none;
+    padding-top: space-for-units(4);
+  }
+}
+
+@media (min-width: 1200px) {
+  .tt__container {
+    padding-right: space-for-units(4);
+    padding-left: space-for-units(4);
+  }
+}
+
+.tt__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.tt__btnClose {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media (min-width: 762px) {
+  .tt__btnClose {
+    display: none;
+  }
+}
+
+.tt__h2 {
+  margin-bottom: space-for-units(2);
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.tt__h3 {
+  margin-bottom: space-for-units(2);
+  font-size: 15px;
+  line-height: 16px;
+  font-family: $font-family;
+  color: $blue;
+}
+
+.tt__p1 {
+  font-size: 10px;
+  line-height: 12px;
+  font-family: $font-family;
+}

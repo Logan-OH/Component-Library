@@ -1,0 +1,25 @@
+@import "../../styles/styleguide.scss";
+
+.hero {
+  height: 451px;
+  width: 100%;
+  background-color: $grey-light;
+  div {
+    &:first-child {
+      position: relative;
+      top: space-for-units(24);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 513px;
+    div {
+      &:first-child {
+        position: relative;
+        top: space-for-units(29.25);
+      }
+    }
+  }
+}

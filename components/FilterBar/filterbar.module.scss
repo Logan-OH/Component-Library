@@ -1,0 +1,65 @@
+@import "../../styles/styleguide.scss";
+
+.filter__bar {
+  .filter__holder {
+    position: relative;
+    width: 100%;
+    @media (min-width: 781px) {
+      width: 80%;
+    }
+    @media (min-width: 993px) {
+      width: 84%;
+    }
+    @media (min-width: 1200px) {
+      width: 86%;
+    }
+  }
+  hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    margin: 0;
+    background-color: $grey-light;
+  }
+  .controls {
+    margin: space-for-units(2) 0;
+    display: flex;
+    justify-content: space-between;
+    .filter__btn {
+      outline: none;
+      border: none;
+      width: 130px;
+      background-color: $blue-15;
+      padding: space-for-units(2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      font-family: $font-family;
+      font-weight: 700;
+      img {
+        display: block;
+        width: 32px;
+        height: auto;
+      }
+    }
+    .clear__btn {
+      outline: none;
+      border: none;
+      width: 160px;
+      padding: space-for-units(2);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
+      font-size: 16px;
+      font-family: $font-family;
+      font-weight: 500;
+      img {
+        display: block;
+        width: 32px;
+        height: auto;
+      }
+    }
+  }
+}

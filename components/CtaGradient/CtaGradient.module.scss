@@ -1,0 +1,77 @@
+@import "../../styles/styleguide.scss";
+
+.vert {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  background-color: transparent;
+  z-index: 10;
+  width: 100%;
+  height: 345px;
+  padding-top: space-for-units(4);
+  padding-bottom: space-for-units(5.5);
+
+  & > div {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 268px;
+  }
+
+  & > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 510px;
+    width: 100vw;
+    background-image: linear-gradient($blue-70percent, $black-70percent);
+  }
+
+  &:nth-of-type(2) {
+    & > span {
+      background-image: linear-gradient($yellow-70percent, $black-70percent);
+    }
+  }
+
+  &:nth-of-type(3) {
+    & > span {
+      background-image: linear-gradient($red-70percent, $black-70percent);
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .vert {
+    max-width: 340px;
+
+    & > div {
+      max-height: 294px;
+      justify-content: flex-start;
+    }
+
+    a {
+      margin-top: auto;
+    }
+  }
+}
+
+.vert__p2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.vert__p1 {
+  max-width: 280px;
+  margin-bottom: space-for-units(5);
+}
+
+@media (min-width: 762px) {
+  .vert__p1 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

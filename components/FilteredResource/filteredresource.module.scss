@@ -1,0 +1,34 @@
+@import "../../styles/styleguide.scss";
+
+.filtered__resource {
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: $font-family;
+    background-color: $blue-15;
+    color: $grey-70;
+    padding: space-for-units(2);
+    padding-left: space-for-units(3);
+    span {
+      font-weight: 400;
+      font-style: italic;
+      color: $grey-40;
+    }
+  }
+  .resource {
+    margin-bottom: space-for-units(2);
+    a {
+      font-size: 21px;
+      font-weight: 700;
+      font-family: $font-family;
+      color: $grey-70;
+      text-decoration: none;
+      span {
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+}

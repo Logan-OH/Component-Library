@@ -1,0 +1,49 @@
+@import "../../styles/styleguide.scss";
+
+.modalmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(3px);
+  background-color: $grey-dark-30-perent;
+  overflow: hidden;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.modalmain__wrapper {
+  max-width: 539px;
+  padding: space-for-units(4);
+  background-color: $blue;
+  overflow: hidden;
+}
+
+.modal__accept {
+  display: block;
+  margin-left: auto;
+}
+
+.modal__btnGrp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: space-for-units(2);
+
+  // not my preferred method, but needed a quick fix
+  // for the styles below
+  button,
+  a > div {
+    font-size: 14px;
+  }
+}
